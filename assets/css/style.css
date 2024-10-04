@@ -1,0 +1,596 @@
+@font-face {
+    font-family: "Roboto Regular";
+    src: url(../font/Roboto-Regular.ttf);
+}
+
+/* /////////////////Reset CSS//////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: rgb(19, 18, 18);
+}
+
+/* ////////////////////Header Styles/////////////////////// */
+header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(/assets/img/bg-slider-06.jpg) no-repeat center center/cover;
+}
+
+/* ////////////////////Navigation Bar///////////////////// */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+nav .logo h1 {
+    font-family: 'Cursive', sans-serif;
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav .social-links a {
+    color: #fff;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.saut {
+    display: block;
+}
+
+/* ///////////////////////////Hero Section/////////////////////// */
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #d4a373;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* <------fin du header------>*/
+
+/* ////////////Premiere partie du main avec Stephens/////////*/
+
+.container {
+    display: flex;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.content {
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Georgia', serif;
+}
+
+h2 span {
+    font-weight: bold;
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.chef-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+.chef-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chef-details h3 {
+    font-size: 18px;
+    color: #333;
+}
+
+.chef-details p {
+    color: #999;
+    font-size: 12px;
+}
+
+.image {
+    width: 50%;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* /////////fin du main stephens + img///////////////////////////////// */
+
+ 
+.aligner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+
+/* /////////////deuxieme partie <---le Menu-->///////////////////////// */
+.couvert {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-container {
+    /* background-image: url(/assets/img/bg-menu-01.jpg); */
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+    padding-left: 17rem;
+    padding-right: 11rem;
+    background-color: #fff;
+}
+
+.menu-tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    background-color: rgb(63, 60, 60);
+    padding: 10px 0; 
+    position: relative;  
+}
+
+.menu-tabs li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px;
+    font-family: 'Georgia', serif;
+    position: relative;
+}
+
+.menu-tabs li a.active {
+    color: #f09d51;
+    border-bottom: 3px solid #f09d51;
+    position: relative;
+}
+
+.menu-list {
+    margin-top: 0px;
+    position: relative;
+    background-color: #fff;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.menu-left, .menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.menu-left img, .menu-right img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    position: relative;
+}
+
+.menu-details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-details h4 {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.menu-details p {
+    font-size: 14px;
+    color: #999;
+    position: relative;
+}
+
+.price {
+    font-size: 18px;
+    color: #f09d51;
+    font-weight: bold;
+    position: relative;
+}
+
+.bg-img1 {
+    margin-top: 50px;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* <----------Partie reservation du restaux------------>*/
+
+
+.blocr {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1a1a;
+    padding-top: 200px;
+    color: white;
+}
+
+.time-open {
+    background-color: #262626;
+    border: 1px dashed rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.titre {
+    font-family: 'Georgia', serif; 
+    font-size: 24px;
+    color: #f09d51;
+    margin-bottom: 10px;
+}
+
+.titre span {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.titre img {
+    width: 40px;
+    margin: 15px 0;
+}
+
+h4 {
+    font-size: 18px;
+    color: #f09d51;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 5px;
+}
+
+.num {
+    color: #f09d51;
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: 400;
+}
+
+
+@media (max-width: 768px) {
+    .time-open {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* ///////////////////Bloc des reservation droite ///////////////// */
+
+/* Container for the reservation section */
+.reservation-container {
+    background-color: #f9f9f9; 
+    padding: 40px;
+    width: 50%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.reservation-container h3 {
+    font-family: 'Georgia', serif;
+    font-size: 26px;
+    color: #f09d51;
+    margin-bottom: 20px;
+}
+
+.reservation-container h3 span {
+    font-size: 36px;
+    font-family: 'Cursive';
+    color: #333;
+}
+
+.reservation-form {
+    margin-top: 30px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 30%;
+    padding: 15px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    background-color: transparent;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #f09d51; /* Button hover effect */
+}
+/* ////////////////////section gallery titre///////////////////// */
+.gallery-titre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* ////////////////////section gallery photo///////////////////// */
+
+.gallery-container {
+    padding: 40px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.view-gallery-btn {
+    margin-top: 30px;
+}
+
+.view-gallery-btn a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.view-gallery-btn a:hover {
+    background-color: #f09d51;
+}
+
+/* /////////////////////Partie our envent ///////////////// */
+
+.ro {
+    display: flex;
+    justify-content: center;
+}
+
+.bloc-gauche {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc-gauche img {
+    display: flex;
+    width: 150px;
+}
+
+
+.bloc-droit img {
+    display: flex;
+    object-fit: cover;
+    width: 25rem;
+    height: 25rem;
+}
+
+/* //////////////section bio du cheff askip//////////////// */
+
+.chef {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 5%;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+.chef .tete {
+    height: 60px;
+    width: 60px;
+}
+
+/* //////////////section maps//////////////// */
+
+iframe {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* //////////////partie footer ////////////////// */
+
+.footer {
+    background-image: url(/assets/img/bg-footer.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    color: #f4f4f4;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+/* Conteneur pour le contenu dans le footer */
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Partie gauche avec le texte */
+.footer-left {
+    max-width: 600px;
+}
+
+.footer-left h2 {
+    font-family: 'Cursive', sans-serif; /* Remplace par le style de police utilisé si besoin */
+    font-size: 36px;
+    color: #f4c285; /* Couleur du texte similaire à celle de ton image */
+    margin: 0;
+}
+
+.footer-left p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/* Partie droite avec le formulaire de newsletter et les icônes sociales */
+.footer-right {
+    text-align: right;
+}
+
+.footer-right input[type="email"] {
+    padding: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+.footer-right input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+.footer-right button {
+    padding: 10px 20px;
+    background-color: #f4c285; /* Ajuste cette couleur pour correspondre à la flèche */
+    border: none;
+    cursor: pointer;
+}
+
+.footer-right button:hover {
+    background-color: #e0a85f;
+}
+
+.footer-right .social-icons {
+    margin-top: 20px;
+}
+
+.footer-right .social-icons a {
+    color: #f4f4f4;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer-right .social-icons a:hover {
+    color: #f4c285;
+}
