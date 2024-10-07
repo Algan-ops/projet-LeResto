@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "Roboto Regular";
-    src: url(../font/Roboto-Regular.ttf);
+    font-family: "allura";
+    src: url(../font/Allura-Regular.ttf);
+}
+@font-face {
+    font-family: "poppins";
+    src: url(../font/Poppins-Regular.ttf);
 }
 
 /* /////////////////Reset CSS//////////////////////// */
@@ -11,7 +15,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'poppins';
     line-height: 1.6;
     background-color: rgb(19, 18, 18);
 }
@@ -30,6 +34,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.nav-links ul li a:hover {
+    color: #f4c285;
 }
 
 nav .logo h1 {
@@ -82,12 +90,13 @@ nav .social-links a {
 }
 
 .hero h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
     color: #d4a373;
+    font-family: "allura";
 }
 
 .hero h1 {
+    
     font-size: 4rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -110,6 +119,9 @@ nav .social-links a {
 }
 
 .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 40px;
     width: 50%;
     text-align: center;
@@ -125,6 +137,14 @@ h2 {
 h2 span {
     font-weight: bold;
     color: #333;
+}
+
+.img-couvert {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 p {
@@ -204,7 +224,7 @@ p {
     list-style-type: none;
     background-color: rgb(63, 60, 60);
     padding: 10px 0; 
-    position: relative;  
+    position: relative;
 }
 
 .menu-tabs li a {
@@ -264,6 +284,7 @@ p {
     color: #333;
     margin-bottom: 5px;
     position: relative;
+    width: 14rem;
 }
 
 .menu-details p {
@@ -273,6 +294,7 @@ p {
 }
 
 .price {
+    margin-right: 50px;
     font-size: 18px;
     color: #f09d51;
     font-weight: bold;
@@ -290,15 +312,21 @@ p {
 
 
 .blocr {
+    margin-top: 50px;
     display: flex;
     justify-content: center;
     background-color: #1a1a1a;
-    padding-top: 200px;
+    padding-top: 250px;
     color: white;
 }
 
+.font-noir-time {
+    background-color: black;
+}
+
 .time-open {
-    background-color: #262626;
+    margin: 10px;
+    background-color: #000000;
     border: 1px dashed rgba(255, 255, 255, 0.3);
     padding: 30px;
     text-align: center;
@@ -341,6 +369,8 @@ p {
     margin-top: 20px;
     font-weight: 400;
 }
+
+
 
 
 @media (max-width: 768px) {
@@ -463,28 +493,136 @@ button[type="submit"]:hover {
 
 /* /////////////////////Partie our envent ///////////////// */
 
-.ro {
-    display: flex;
-    justify-content: center;
+.fondgris h4 {
+    color: black;
 }
 
-.bloc-gauche {
-    background-color: white;
+#event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#event h2 {
+    padding-top: 5rem;
+    color: white;
+}
+#event img {
+    margin: 2rem 0;
+}
+.cardcolumn {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+#event .fondblanc {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#event .fondblanc div {
+    display: flex;
+}
+.cardevent {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5%;
+    margin-right: 2rem;
+    width: 100%;
+}
+.height50 {
+    height: 46.5%;
+}
+.height100 {
+    height: 100%;
+}
+.eventimg1 {
+    background-image: url(../img/event-01.jpg);
+    background-size: cover;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventimg2 {
+    background-image: url(../img/event-02.jpg);
+    background-size: cover;
+    width: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eventimg3 {
+    background-image: url(../img/event-03.jpg);
+    background-size: cover;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#event .fondblanc p {
+    padding-right: 0.5rem;
+    padding-bottom: 1rem;
+    color: #A9A69E;
+}
+#event .eventimg1 .fondgris, #event .eventimg2 .fondgris {
+    background-color: black;
+    padding: 1rem 2rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.bloc-gauche img {
+#event .fondblanc {
+    padding: 2rem 1rem;
+}
+#event .fondblanc h4 {
+    font-size: 28px;
+    font-weight: 400;
+}
+#event .fondblanc a {
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    font-size: 16px;
+}
+#event .eventimg3 .fondblanc{
     display: flex;
-    width: 150px;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.bloc-droit img {
+#event .eventimg3 .fondblanc {
+    padding: 0 1rem 2rem 1rem;
+    background-color: white;
+}
+#event .eventimg3 .fondgris {
+    background-color: black;
+    color: white;
     display: flex;
-    object-fit: cover;
-    width: 25rem;
-    height: 25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 4rem;
+}
+#event .eventimg3 .fondgris p {
+    color: white;
+    padding: 0;
+}
+#event .eventimg3 h4 {
+    text-align: center;
+}
+#event .eventimg3 a {
+    margin-bottom: 2rem;
+}
+
+#event .eventimg3 a:hover {
+    color: #e0a85f;
 }
 
 /* //////////////section bio du cheff askip//////////////// */
@@ -512,6 +650,7 @@ iframe {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 35rem;
 }
 
 /* //////////////partie footer ////////////////// */
@@ -541,9 +680,9 @@ iframe {
 }
 
 .footer-left h2 {
-    font-family: 'Cursive', sans-serif; /* Remplace par le style de police utilisé si besoin */
+    font-family: 'Cursive', sans-serif;
     font-size: 36px;
-    color: #f4c285; /* Couleur du texte similaire à celle de ton image */
+    color: #f4c285;
     margin: 0;
 }
 
@@ -593,4 +732,173 @@ iframe {
 
 .footer-right .social-icons a:hover {
     color: #f4c285;
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1024px) {
+    .container {
+        flex-direction: row;
+        padding: 40px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .nav-links li {
+        margin: 0 20px;
+    }
+
+    .menu-container {
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .blocr {
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .reservation-container{
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .menu-container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .reservation-container, .gallery-container {
+        padding: 20px;
+    }
+
+    .menu-tabs {
+        flex-direction: column;
+    }
+
+    .menu-left img, .menu-right img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-image: url(../img/store-01.jpg);
+        object-fit: cover;    
+    }
+    .content p, .content h2, .content h3 {
+        background-color: #f09d51;
+        border-radius: 10px;
+    }
+    .image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .container, .menu-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item img {
+        width: 100%;
+    }
+
+    .reservation-form input, .reservation-form button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .menu-tabs {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu-tabs li {
+        margin-bottom: 10px;
+    }
+
+    .price {
+        font-size: 16px;
+        margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .menu-container, .gallery-container, .reservation-container {
+        padding: 10px;
+    }
+
+    .menu-tabs {
+        font-size: 12px;
+    }
+
+    .menu-item {
+        padding-bottom: 5px;
+    }
+
+    .menu-left img, .menu-right img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .price {
+        font-size: 14px;
+        margin-right: 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        max-width: 100%;
+        margin: 10px 0;
+    }
+
+    .social-icons a {
+        margin: 5px;
+    }
 }
