@@ -12,19 +12,22 @@
     <header>
         <nav>
             <div class="logo">
-                <h1>Resto</h1>
+                <h1 class="allura-police">Resto</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Reservations</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Shop</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="burger">
+                <i class="fa-solid fa-bars"></i>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
             <div class="social-links">
-                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#"><i class="fa fa-twitter"></i></a>
                 <a href="#"><i class="fa fa-instagram"></i></a>
             </div>
@@ -33,8 +36,7 @@
         <!----------------------Hero Section---------------------->
         <section class="hero">
             <div class="hero-content">
-                <h2>Welcome to</h2>
-                <h1>The Resto</h1>
+                <h2>Welcome to<span class="poppins-police saut blanc">The Resto</span></h2>
                 <p>We serve only the freshest ingredients!</p>
             </div>
         </section>
@@ -42,7 +44,7 @@
     <main>
         <div class="container">
             <div class="content">
-                <h2>Discover<span class="saut">Our Store</span></h2>
+                <h2>Discover<span class="saut poppins-police">OUR STORE</span></h2>
                 <img class="img-couvert" src="assets/img/ic-plate.png" alt="imgage de couvert">
                 <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                 <div class="chef-info">
@@ -58,7 +60,7 @@
             </div>
         </div>
         <div class="aligner">
-            <h2 class="discover">Discover</h2>
+            <h2 class="discover allura-police">Discover<span class="saut poppins-police">OUR GALLERY</span></h2>
             <img src="assets/img/ic-plate.png" alt="imgage de couvert">
         </div> 
         <img class="bg-img1" src="/assets/img/bg-menu-01.jpg" alt="">
@@ -154,14 +156,14 @@
             <div class="font-noir-time">
                 <div class="time-open">
                     <div class="bloc-monday">
-                        <h3 class="titre"><span class="saut">Time</span> OPEN</h3>
+                        <h3 class="titre"><span class="saut blanc allura-police">Time</span> OPEN</h3>
                         <img src="assets/img/ic-plate.png" alt="imgage de couvert">
                         <h4>MONDAY - FRIDAY</h4>
                         <p>7AM - 11AM (Breakfast)</p>
                         <p>11AM - 10PM (Luch/Dinner)</p>
                     </div>
                     <div>
-                        <h3>SATURDAY / SUNDAY</h3>
+                        <h4>SATURDAY / SUNDAY</h4>
                         <p>8AM - 1PM (Brunch)</p>
                         <p>1PM - 9PM (Luch/Dinner)</p>
                     </div>
@@ -170,7 +172,7 @@
             </div>
 <!-----------------Bloc de droite------------------>
             <div class="reservation-container">
-                <h3><span class="saut">Reservation</span> ONLINE BOOKING</h3>
+                <h3><span class="saut allura-police">Reservation</span>ONLINE BOOKING</h3>
                 <div class="reservation-form">
                     <form action="#">
                         <div class="form-group">
@@ -190,7 +192,7 @@
         </section>
  <!----------------------section gallery titre-------------------->
         <div class="gallery-titre">
-            <h2>Discover<span class="saut">OUR GALLERY</span></h2>
+            <h2 class="allura-police">Discover<span class="saut poppins-police">OUR GALLERY</span></h2>
             <img src="assets/img/ic-plate.png" alt="imgage de couvert">
         </div>
 <!----------------------section gallery photos-------------------->
@@ -222,7 +224,7 @@
 <!-------------------bloc Our event------------------------>
 
         <section id="event" class="fondgris">
-            <h2><span class="saut">Upcoming</span>our event</h2>
+            <h2><span class="saut allura-police">Upcoming</span>our event</h2>
             <img src="assets/img/ic-plate.png" alt="Fourchette et cuillère croisé">
             <div class="cardcolumn">
                 <div>
@@ -279,6 +281,14 @@
                 </div>
             </div>
         </section>
+<!------------section meuf chef askip-------------->
+
+<div class="chef">
+    <img class="tete" src="assets/img/avatar-02.jpg" alt="tete meuf">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae unde corrupti nemo asperiores rerum dignissimos quisquam, possimus, doloribus necessitatibus veritatis dolores eveniet adipisci facere modi? Repellendus qui quis soluta nobis.</p>
+    <h3>Russell Stephens</h3>
+    <h4>CEO - HeadPassion</h4>
+</div>
 
 <!-----------------section gps----------------->
     <div class="iframe">
@@ -289,7 +299,7 @@
         <footer class="footer">
             <div class="footer-content">
                 <div class="footer-left">
-                    <h2>Resto</h2>
+                    <h2 class="allura-police">Resto</h2>
                     <p>Le célèbre ancien chef de Nightwood, Jason Vincent, est de retour dans une cuisine professionnelle après avoir ouvert son premier restaurant dans un petit espace à Logan Square. Pâtes faites maison.</p>
                 </div>
                 <div class="footer-right">
@@ -306,5 +316,6 @@
                 </div>
             </div>
         </footer>
+            
 </body>
 </html>
